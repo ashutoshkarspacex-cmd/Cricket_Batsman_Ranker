@@ -1,0 +1,32 @@
+# Cricket Player Segmentation using K-Means Clustering
+
+This project applies **K-Means Clustering** to cricket player statistics to identify groups of players with similar batting performances. The dataset was preprocessed, cleaned, and transformed before clustering to uncover hidden patterns among players.
+
+## Features
+- Data Cleaning and Preprocessing
+- Feature Engineering (Career Experience Calculation)
+- Outlier Analysis
+- Feature Scaling using StandardScaler
+- Optimal Cluster Selection using:
+  - Elbow Method
+  - Silhouette Score
+- K-Means Clustering
+- 2D and 3D Cluster Visualization
+
+## Tech Stack
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Scikit-Learn
+- Plotly
+
+## Workflow
+Data Collection → Data Cleaning → Feature Engineering → Scaling → Cluster Analysis → Visualization
+
+## Results
+Players were successfully grouped into distinct clusters based on their batting statistics, enabling comparative analysis of different player profiles and performance patterns.
+
+## Author
+**Ashutosh Kar**
