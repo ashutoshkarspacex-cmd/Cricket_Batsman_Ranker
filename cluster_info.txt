@@ -1,23 +1,23 @@
 This consists of cluster wise information of players.
-Cluster:0-The potential greats
+Cluster:0-The potential greats(group1)
 --Very decent players
 --clutch players
 --good experience(11 years)
 
-Cluster:1-The Elites
+Cluster:1-The Elites(group2)
 --Good consistency
 --Moderate Performance
 --15 years of experience
 --Veterans
 
-Cluster:2-The Legends
+Cluster:2-The Legends(group3)
 --players with high average
 --highest mean runs:388
 --avg of 17 years of experience
 --Absolute greats of the game
 --Most centuries/fifties
 
-Cluster:3-The Smashers
+Cluster:3-The Smashers(group4)
 --Highest strike rate:88
 --They are finishers
 --Top class legendary players
