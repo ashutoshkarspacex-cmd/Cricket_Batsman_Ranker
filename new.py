@@ -59,11 +59,12 @@ def statistical_data(df3=df3,l=label.flatten()):
            plt.show()
           case 3:
            plt.figure(figsize=(10,6))
-           sns.scatterplot(data=df3, x='Runs', y='SR', hue=l, palette='Set1', s = 150)
-           plt.title('Runs v/s Strike Rate')
+           sns.scatterplot(data=df3, x='Inns', y='SR', hue=l, palette='Set1', s = 150)
+           plt.title('Innings v/s Strike Rate')
            plt.show()
           case _:
               print("f") 
 
+df3.groupby(label.flatten())
 #cluster_show()
 statistical_data()
