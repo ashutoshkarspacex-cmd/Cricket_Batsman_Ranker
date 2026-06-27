@@ -18,7 +18,7 @@ df1= df1.to_numpy(dtype=np.float32)
 ## The sample data must be a numpy array of np.float32 type
 criteria = (cv.TERM_CRITERIA_EPS + cv.TERM_CRITERIA_MAX_ITER, 10, 1.0)
 ret,label,center=cv.kmeans(df1,4,None,criteria,10,cv.KMEANS_RANDOM_CENTERS)
-
+df3['id']=label.flatten()
 def file_info(df4=df):
     info=df.info()
     print(info)
@@ -64,8 +64,5 @@ def statistical_data(df3=df3,l=label.flatten()):
            plt.show()
           case _:
               print("f") 
-
-id=df3.groupby(label.flatten())
-print(id)
 #cluster_show()
 # statistical_data()
