@@ -3,6 +3,7 @@ from matplotlib import pyplot as plt
 import pandas as pd
 import numpy as np
 import seaborn as sns
+import plotly.express as px
 df=pd.read_csv(r'D:\Downloads\Cricket_Batsman_Ranker\Cricket.Runs.csv',encoding='latin')
 df3=pd.read_csv(r'D:\Downloads\Cricket_Batsman_Ranker\Cricket.Runs.csv',encoding='latin')
 df[['start_of_career','end_of_career']]=df['Span'].str.split('-',n=1,expand=True)
@@ -52,7 +53,7 @@ def cluster_show(df3=df3):
           case _:
                print ("f")        
 def statistical_data(df3=df3,l=label.flatten()):
-      print("1.Runs v/s Average\n2.Innings v/s Runs\n3.Runs v/s Strike rate")
+      print("1.Runs v/s Average\n2.Innings v/s Runs\n3.Runs v/s Strike rate\n4.3D plot")
       choice=int(input("Enter which data you wanna see:"))
       match choice:
           case 1:
@@ -70,6 +71,10 @@ def statistical_data(df3=df3,l=label.flatten()):
            sns.scatterplot(data=df3, x='Inns', y='SR', hue=l, palette='Set1', s = 150)
            plt.title('Innings v/s Strike Rate')
            plt.show()
+          case 4:
+           fig = px.scatter_3d(df3, x ='Runs', y='Ave', z='SR', color='id', hover_name='Player',title='3d plot')
+           fig.update_layout(scene=dict(xaxis_title='Runs',yaxis_title='Average',zaxis_title='Strike rate'), width=800,height=600)
+           fig.show()
           case _:
               print("f") 
 cluster_show()
