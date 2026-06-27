@@ -72,5 +72,6 @@ def statistical_data(df3=df3,l=label.flatten()):
            plt.show()
           case _:
               print("f") 
-#cluster_show()
-# statistical_data()
+cluster_show()
+statistical_data()
+file_info()

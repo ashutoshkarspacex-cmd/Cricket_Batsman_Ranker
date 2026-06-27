@@ -25,7 +25,7 @@ Input parameters
 
 Output parameters
 
-    compactness : It is the sum of squared distance from each point to their corresponding centers.
+    compactness or ret : It is the sum of squared distance from each point to their corresponding centers.
 
     labels : This is the label array (same as ‘code’ in previous article) where each element marked ‘0’, ‘1’…..
 
