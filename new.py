@@ -30,15 +30,23 @@ def cluster_show(df3=df3):
      choice=int(input("Enter which cluster you wanna see:"))
      match choice:
           case 1:
+               print("The Greats")
+               print("--------------------")
                A=df3[label==0].head()
                print(A)
           case 2:
+               print("The Elites")
+               print("--------------------")
                A=df3[label==1].head()
                print(A)
           case 3:
+               print("The Legends")
+               print("--------------------")
                A=df3[label==2].head()
                print(A)
           case 4:
+               print("The Smashers")
+               print("--------------------")
                A=df3[label==3].head()
                print(A)
           case _:
