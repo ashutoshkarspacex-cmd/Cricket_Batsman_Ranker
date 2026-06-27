@@ -44,24 +44,26 @@ def cluster_show(df3=df3):
           case _:
                print ("f")        
 def statistical_data(df3=df3,l=label.flatten()):
-     plt.figure(figsize=(10,6))
-     sns.scatterplot(data=df3, x='Runs', y='Ave', hue=l, palette='Set1', s = 150)
-     plt.title('Runs v/s Average')
-     plt.show()
-     
-
-
-     plt.figure(figsize=(10,6))
-     sns.scatterplot(data=df3, x='Inns', y='Runs', hue=l, palette='Set1', s = 150)
-     plt.title('Innings v/s Runs')
-     plt.show()
-
-
-
-     plt.figure(figsize=(10,6))
-     sns.scatterplot(data=df3, x='Runs', y='SR', hue=l, palette='Set1', s = 150)
-     plt.title('Runs v/s Strike Rate')
-     plt.show()
+      print("1.Runs v/s Average\n2.Innings v/s Runs\n3.Runs v/s Strike rate")
+      choice=int(input("Enter which cluster you wanna see:"))
+      match choice:
+          case 1:
+           plt.figure(figsize=(10,6))
+           sns.scatterplot(data=df3, x='Runs', y='Ave', hue=l, palette='Set1', s = 150)
+           plt.title('Runs v/s Average')
+           plt.show()
+          case 2:
+           plt.figure(figsize=(10,6))
+           sns.scatterplot(data=df3, x='Inns', y='Runs', hue=l, palette='Set1', s = 150)
+           plt.title('Innings v/s Runs')
+           plt.show()
+          case 3:
+           plt.figure(figsize=(10,6))
+           sns.scatterplot(data=df3, x='Runs', y='SR', hue=l, palette='Set1', s = 150)
+           plt.title('Runs v/s Strike Rate')
+           plt.show()
+          case _:
+              print("f") 
 
 #cluster_show()
 statistical_data()
