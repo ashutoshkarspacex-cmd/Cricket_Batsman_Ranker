@@ -45,7 +45,7 @@ def cluster_show(df3=df3):
                print ("f")        
 def statistical_data(df3=df3,l=label.flatten()):
       print("1.Runs v/s Average\n2.Innings v/s Runs\n3.Runs v/s Strike rate")
-      choice=int(input("Enter which cluster you wanna see:"))
+      choice=int(input("Enter which data you wanna see:"))
       match choice:
           case 1:
            plt.figure(figsize=(10,6))
@@ -65,6 +65,7 @@ def statistical_data(df3=df3,l=label.flatten()):
           case _:
               print("f") 
 
-df3.groupby(label.flatten())
+id=df3.groupby(label.flatten())
+print(id)
 #cluster_show()
-statistical_data()
+# statistical_data()
