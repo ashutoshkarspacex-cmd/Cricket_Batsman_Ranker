@@ -18,14 +18,14 @@ This project applies K-Means Clustering to cricket player statistics to segment 
 
 ## Tech Stack
 
-- Python 3.x
+- Python 3.13
 - Pandas - Data manipulation and analysis
 - NumPy - Numerical computations
 - Scikit-Learn - Machine learning (K-Means, preprocessing)
 - Matplotlib & Seaborn - Statistical visualizations
 - Plotly - Interactive 3D visualizations
 - Jupyter Notebook - Interactive development environment
-
+- opencv
 ## Prerequisites
 
 Ensure you have the following installed:
@@ -147,11 +147,5 @@ Ashutosh Kar
 ## Contributing
 
 Contributions are welcome! Feel free to fork this repository and submit pull requests with improvements or new features.
-
-## Contact & Support
-
-For questions or suggestions, please open an issue on the GitHub repository or contact the author directly.
-
----
 
 Last Updated: June 2026
