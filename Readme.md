@@ -59,21 +59,6 @@ Ensure you have the following installed:
    - Open the main notebook file
    - Execute all cells sequentially to reproduce the analysis
 
-## Project Structure
-
-```
-Cricket_Batsman_Ranker/
-├── Readme                          # Project documentation
-├── requirements.txt               # Python dependencies
-├── Cricket_Batsman_Ranker.ipynb   # Main analysis notebook
-├── data/                          # Dataset files
-│   └── cricket_players.csv        # Cricket player statistics
-└── outputs/                       # Generated visualizations and results
-    ├── elbow_curve.png           # Elbow method plot
-    ├── silhouette_plot.png       # Silhouette score analysis
-    └── cluster_visualization.html # Interactive 3D cluster plot
-```
-
 ## Dataset
 
 - Source: Cricket player statistics database
@@ -134,10 +119,6 @@ The clustering analysis reveals patterns such as:
 - Career experience impact on performance metrics
 - Performance tier classification (elite, intermediate, developing)
 - Identification of comparable players for benchmarking
-
-## License
-
-This project is open source and available under the MIT License.
 
 ## Author
 
